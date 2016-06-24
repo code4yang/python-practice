@@ -8,8 +8,8 @@ def login_zhihu():
     session = requests.Session()
     resp = session.get('http://www.zhihu.com/#signin', headers=header)
     xsrf = BeautifulSoup(resp.content, 'lxml').find('input', attrs={'name': '_xsrf'}).attrs['value']
-    data = {'_xsrf': xsrf, 'password': '1234560.', 'captcha_type': 'cn', 'remember_me': 'true',
-            'email': '704298867@qq.com'}
+    data = {'_xsrf': xsrf, 'password': '', 'captcha_type': 'cn', 'remember_me': 'true',
+            'email': ''}
     print(data)
     resp = session.post('http://www.zhihu.com/login/email', data=data, headers=header)
     print(resp.json())
