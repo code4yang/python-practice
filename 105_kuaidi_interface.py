@@ -3,6 +3,7 @@ import requests
 company = "http://www.kuaidi100.com/autonumber/autoComNum?text={0}"
 post = "http://www.kuaidi100.com/query?type={0}&postid={1}"
 
+
 def get_company_no(post_id):
     uri = company.format(post_id)
     resp = requests.get(uri)
@@ -10,6 +11,7 @@ def get_company_no(post_id):
     if j is not None and j.get('auto') is not None and len(j['auto']) > 0:
         # if code exists return the first company code
         return j['auto'][0]['comCode']
+
 
 def get_post_info(post_id):
     uri = post.format(get_company_no(post_id), post_id)
