@@ -28,7 +28,6 @@ def write_one_to_sheet(sheet, row, col, value):
     :param value:
     :return:
     """
-    ctype = 1
     if sheet is None:
         return
     print('row', row)
@@ -50,13 +49,13 @@ def trans(lists, sheet, count):
             word = item[0: index]
             meaning = item[index+1:]
             write_one_to_sheet(sheet, row, col, word)
-            col = col + 1
+            col += 1
             write_one_to_sheet(sheet, row, col, meaning)
-            col = col + 1
-            num = num + 1
+            col += 1
+            num += 1
             if col > count - 1:
                 col = 0
-                row = row + 1
+                row += 1
     return num
 
 
