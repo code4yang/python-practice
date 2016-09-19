@@ -4,23 +4,15 @@
 """
 import re
 
-import bs4
 import requests
 from bs4 import BeautifulSoup
 
 
 def get_file_link(url=r'http://www.nruan.com/win-key.html'):
-    """
-
-    :param url: 根据url搜索其中第一条百度盘的链接
-    :return:
-    """
-    header = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 '
-                            '(KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36'}
-    resp = requests.get(url=url,headers=header)
+    resp = requests.get(url=url)
     soup = BeautifulSoup(resp.content, 'lxml')
-    wows = soup.find_all(name='strong',text=re.compile('\W*福利666\W*'))
-    print(wows[0].parent())
+    wows = soup.find_all(text=re.compile(r'http://pan.baidu.com'))
+    print(wows)
 
 
 if __name__ == '__main__':
