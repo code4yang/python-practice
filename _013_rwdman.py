@@ -43,7 +43,7 @@ def buildxml(path, type):
     elif type == 'config':
         ret = '<include name="WEB-INF/classes' + path[path.find('config/') + 6:] + '" />\r\n'
     elif type == 'class':
-        ret = '<include name="WEB-INF/classes' + path[path.find('src/') + 3:] + '" />\r\n'
+        ret = '<include name="WEB-INF/classes' + path[path.find('src/') + 3:][:-4] + 'class" />\r\n'
     return ret
 
 
@@ -51,8 +51,7 @@ if __name__ == '__main__':
     rtnset = read_changelog('changeLog.txt')
     rtnList = set_type(rtnset)
     xml = open('build1.xml', mode='wt')
-    xml.writelines('''
-    <?xml version="1.0" encoding="utf-8"?>
+    xml.writelines('''<?xml version="1.0" encoding="utf-8"?>
     <project name="rms deploy" default="antwar" basedir=".">
         <property file="build.properties" />
         <target name="antwar" description="打包war" depends="">
