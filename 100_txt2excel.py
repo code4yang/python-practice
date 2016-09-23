@@ -2,7 +2,7 @@ import xlrd
 import xlwt
 
 
-def open_excel(file_name = 'words.xls'):
+def open_excel(file_name='words.xls'):
     try:
         data = xlrd.open_workbook(file_name)
         return data
@@ -15,7 +15,7 @@ def deal_string(s):
     if len(s) > 0:
         index = s.index('.')
         if index > 0:
-            s = s[index+1:]
+            s = s[index + 1:]
     return s.strip()
 
 
@@ -47,7 +47,7 @@ def trans(lists, sheet, count):
 
         if index > 0:
             word = item[0: index]
-            meaning = item[index+1:]
+            meaning = item[index + 1:]
             write_one_to_sheet(sheet, row, col, word)
             col += 1
             write_one_to_sheet(sheet, row, col, meaning)

@@ -19,5 +19,7 @@ def get_post_info(post_id):
     j = resp.json()
     return j
 
-
-print(get_post_info('881443775034378914'))
+if __name__ == '__main__':
+    data = get_post_info('881443775034378914')['data']
+    for d in data:
+        print(d['ftime']+' -> '+d['context'])

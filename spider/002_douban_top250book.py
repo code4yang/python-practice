@@ -26,13 +26,12 @@ def get_top250_book(books, url='http://book.douban.com/top250', flag=False):
         if next is not None and next.a is not None:
             get_top250_book(books, next.a.get('href'), flag)
 
-
-lists = []
-get_top250_book(lists, flag=True)
-count = 1
-file = open('top250Book.txt', 'wt')
-for item in lists:
-    print(count, item)
-    count += 1
-    file.writelines(item + '\r\n')
-
+if __name__ == '__main__':
+    lists = []
+    get_top250_book(lists, flag=True)
+    count = 1
+    file = open('top250Book.txt', 'wt')
+    for item in lists:
+        print(count, item)
+        count += 1
+        file.writelines(item + '\r\n')
