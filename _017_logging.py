@@ -1,7 +1,7 @@
 import logging
 import logging.config
 
-logging.config.fileConfig("log.config")    # 采用配置文件
+logging.config.fileConfig("log.conf")    # 采用配置文件
 
 # create logger
 logger = logging.getLogger("simpleExample")

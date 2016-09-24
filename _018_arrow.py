@@ -28,3 +28,4 @@ if __name__ == '__main__':
     tz = tz.gettz('US/Pacific')
     print(now.to(tz))
     print(now.span('hour'))
+    print(now.dst())
