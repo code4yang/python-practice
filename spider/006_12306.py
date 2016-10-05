@@ -16,6 +16,7 @@ def get_station_info(url=r'https://kyfw.12306.cn/otn/resources/js/framework/stat
     logger = logging.getLogger(__name__)
     logger.info('starting get station info')
     resp = requests.get(url=url, verify=False)
+    resp = requests.get(url=url, verify=False)
     reg = re.compile(r'@[^\|]*\|[^\|]*\|[^\|]*\|[^\|]*\|[^\|]*\|[0-9]*')
     all = reg.findall(resp.text)
     logger.info(str(len(all)) + ' station infos has got')
@@ -83,7 +84,7 @@ def display_info(tickets):
 if __name__ == "__main__":
     logging.config.fileConfig("log.conf")
     requests.packages.urllib3.disable_warnings()
-    # stations = get_station_info()
-    # write2mongo(stations)
+    stations = get_station_info()
+    write2mongo(stations)
     tickets = get_ticket_info('2016-10-03', 'SSH', 'NCG')
     display_info(tickets)

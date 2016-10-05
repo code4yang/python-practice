@@ -20,6 +20,6 @@ def get_post_info(post_id):
     return j
 
 if __name__ == '__main__':
-    data = get_post_info('881443775034378914')['data']
+    data = get_post_info('536343034901')['data']
     for d in data:
         print(d['ftime']+' -> '+d['context'])
