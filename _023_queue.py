@@ -5,13 +5,15 @@ from random import Random
 
 
 def producer(que, lock):
-    x = Random().randint(1, 100)
-    print('produce :' + str(x))
-    que.put(x)
+    while True:
+        x = Random().randint(1, 100)
+        print('produce :' + str(x))
+        que.put(x)
 
 
 def customer(que, lock):
-    print('custom :' + str(que.get()))
+    while True:
+        print('custom :' + str(que.get()))
 
 
 def main():

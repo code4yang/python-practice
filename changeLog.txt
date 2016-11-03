@@ -1,20 +1,43 @@
-r543 | chenbx | 2016-09-26 17:04:18 CST
+r554 | chenbx | 2016-10-24 09:44:14 CST
 Changed paths:
-	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/rule/dao/impl/RuleParamDeployDAOImpl.java
-	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/rule/service/impl/RuleParamDeploySVImpl.java
-	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/rule/view/RuleParamDeploy.java
+	M /SH-RM/channel-award-sh-rm/RwdMan/html/prepdata/PrepOfferDataDeploy.html
 
-修改了备份查询arg_ver条件
+修改策划发布页面策划类型输入框长度
 ----------------------------------------------------------------------------
-r542 | chenbx | 2016-09-26 15:41:57 CST
+r553 | chenbx | 2016-10-21 16:55:45 CST
 Changed paths:
-	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/projcfgdata/service/impl/DealProjCfgDataSVImpl.java
-	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/projcfgdata/service/impl/OfferDataSVImpl.java
-	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/rule/dao/impl/RuleParamDeployDAOImpl.java
-	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/rule/dao/interfaces/IRuleParamDeployDAO.java
-	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/rule/service/impl/RuleParamSVImpl.java
-	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/rule/service/interfaces/IRuleParamDeploySV.java
-	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/rule/view/RuleParamDeploy.java
+	M /SH-RM/channel-award-sh-rm/RwdMan/html/prepdata/PrepOfferDataDeploy.html
+	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/projcfgdata/dao/impl/OfferDataDAOImpl.java
 
-新增短信审批规则参数短信回复部分流程
+策划发布页面增加权限，为了查询到老口径的数据修改了策划管理页面查询SQL
+----------------------------------------------------------------------------
+r552 | chenbx | 2016-10-20 18:01:48 CST
+Changed paths:
+	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/util/AppEngineAccessSHAI.java
+
+还原AppEngineAccessSHAI文件
+----------------------------------------------------------------------------
+r551 | chenbx | 2016-10-20 16:32:19 CST
+Changed paths:
+	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/projcfgdata/dao/impl/OfferDataDAOImpl.java
+	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/projcfgdata/view/PrepOfferData.java
+
+修改合约细分后的策划查询条件
+----------------------------------------------------------------------------
+r550 | chenbx | 2016-10-18 11:05:59 CST
+Changed paths:
+	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/projcfgdata/dao/impl/OfferDataDAOImpl.java
+
+策划管理查询修改，不在rwd_sync_data但在rwd_offer_config的数据也需要显示
+----------------------------------------------------------------------------
+r549 | chenbx | 2016-10-18 10:54:21 CST
+Changed paths:
+	M /SH-RM/channel-award-sh-rm/RwdMan/html/prepdata/PrepOfferData.html
+	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/projcfgdata/dao/impl/OfferDataDAOImpl.java
+	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/projcfgdata/dao/interfaces/IOfferDataDAO.java
+	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/projcfgdata/service/impl/OfferDataSVImpl.java
+	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/projcfgdata/service/interfaces/IOfferDataSV.java
+	M /SH-RM/channel-award-sh-rm/RwdMan/src/com/ailk/reward/projcfgdata/view/PrepOfferData.java
+
+新增策划大类操作权限配置
 ----------------------------------------------------------------------------

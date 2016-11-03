@@ -5,7 +5,7 @@ import re
 
 htmlextends = ['html', 'page', 'uientity', 'application']
 clazzextends = ['java']
-configextends = ['bo', 'svpkg', 'cmpt']
+configextends = ['bo', 'svpkg', 'cmpt', 'xml']
 
 
 def read_changelog(filename):

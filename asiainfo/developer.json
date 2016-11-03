@@ -1,0 +1,394 @@
+[
+    {
+        "MENU_NAME": "报表管理",
+        "name": "报表管理",
+        "MENU_ID": "1570000",
+        "CLASS_LEVEL": "1"
+    },
+    {
+        "MENU_NAME": "参数管理",
+        "name": "参数管理",
+        "MENU_ID": "1580000",
+        "CLASS_LEVEL": "1"
+    },
+    {
+        "MENU_NAME": "酬金结果管理",
+        "name": "酬金结果管理",
+        "MENU_ID": "1540000",
+        "CLASS_LEVEL": "1"
+    },
+    {
+        "MENU_NAME": "酬金支付管理",
+        "name": "酬金支付管理",
+        "MENU_ID": "1550000",
+        "CLASS_LEVEL": "1"
+    },
+    {
+        "MENU_NAME": "规则版本管理",
+        "name": "规则版本管理",
+        "MENU_ID": "1530000",
+        "CLASS_LEVEL": "1"
+    },
+    {
+        "MENU_NAME": "计算流程管理",
+        "name": "计算流程管理",
+        "MENU_ID": "1520000",
+        "CLASS_LEVEL": "1"
+    },
+    {
+        "MENU_NAME": "数据集管理",
+        "name": "数据集管理",
+        "MENU_ID": "1510000",
+        "CLASS_LEVEL": "1"
+    },
+    {
+        "MENU_NAME": "酬金稽核(抽取/计算)",
+        "PARENT_MENU_ID": "1510000",
+        "name": "酬金稽核(抽取/计算)",
+        "MOD_NAME": "?service=page/contrast.ContrastReport&listener=init&projectId=400000&objectId=400001",
+        "MENU_ID": "1550025",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/contrast.ContrastReport&listener=init&projectId=400000&objectId=400001"
+    },
+    {
+        "MENU_NAME": "数据集管理",
+        "PARENT_MENU_ID": "1510000",
+        "name": "数据集管理",
+        "MOD_NAME": "?service=page/dataset.QryDatasetList",
+        "MENU_ID": "1510001",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/dataset.QryDatasetList"
+    },
+    {
+        "MENU_NAME": "数据集纬度绑定管理",
+        "PARENT_MENU_ID": "1510000",
+        "name": "数据集纬度绑定管理",
+        "MOD_NAME": "?service=page/dataset.QueryDatasetDimRelList",
+        "MENU_ID": "1510003",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/dataset.QueryDatasetDimRelList"
+    },
+    {
+        "MENU_NAME": "外部指标导入",
+        "PARENT_MENU_ID": "1510000",
+        "name": "外部指标导入",
+        "MOD_NAME": "?service=page/itemimp.QueryImpItemValuesList&listener=initQueryImpItemValuesList",
+        "MENU_ID": "1510005",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/itemimp.QueryImpItemValuesList&listener=initQueryImpItemValuesList"
+    },
+    {
+        "MENU_NAME": "纬度指标管理",
+        "PARENT_MENU_ID": "1510000",
+        "name": "纬度指标管理",
+        "MOD_NAME": "?service=page/dim.DimMana",
+        "MENU_ID": "1510002",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/dim.DimMana"
+    },
+    {
+        "MENU_NAME": "后台计算日志查询",
+        "PARENT_MENU_ID": "1520000",
+        "name": "后台计算日志查询",
+        "MOD_NAME": "?service=page/callog.QueryCalLog&listener=init",
+        "MENU_ID": "1550033",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/callog.QueryCalLog&listener=init"
+    },
+    {
+        "MENU_NAME": "流程管理",
+        "PARENT_MENU_ID": "1520000",
+        "name": "流程管理",
+        "MOD_NAME": "?service=page/flow.QueryFlowInfos&listener=init",
+        "MENU_ID": "1520006",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/flow.QueryFlowInfos&listener=init"
+    },
+    {
+        "MENU_NAME": "算法管理",
+        "PARENT_MENU_ID": "1520000",
+        "name": "算法管理",
+        "MOD_NAME": "?service=page/scpt.ScptListQuery&listener=init",
+        "MENU_ID": "1520007",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/scpt.ScptListQuery&listener=init"
+    },
+    {
+        "MENU_NAME": "算法审核",
+        "PARENT_MENU_ID": "1520000",
+        "name": "算法审核",
+        "MOD_NAME": "?service=page/audit.QueryCommonAdtRecList&listener=initCommonAdtRecList&busiTypeCode=400000&auditBizCode=SCPTAUDIT",
+        "MENU_ID": "1520008",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/audit.QueryCommonAdtRecList&listener=initCommonAdtRecList&busiTypeCode=400000&auditBizCode=SCPTAUDIT"
+    },
+    {
+        "MENU_NAME": "酬金规则稽核",
+        "PARENT_MENU_ID": "1530000",
+        "name": "酬金规则稽核",
+        "MOD_NAME": "?service=page/plan.QueryPrevPlanBind&listener=init",
+        "MENU_ID": "1530012",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/plan.QueryPrevPlanBind&listener=init"
+    },
+    {
+        "MENU_NAME": "数据源绑定",
+        "PARENT_MENU_ID": "1530000",
+        "name": "数据源绑定",
+        "MOD_NAME": "?service=page/Translation.QueryTranslationList",
+        "MENU_ID": "1530008",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/Translation.QueryTranslationList"
+    },
+    {
+        "MENU_NAME": "预演方案",
+        "PARENT_MENU_ID": "1530000",
+        "name": "预演方案",
+        "MOD_NAME": "?service=page/plan.RulePrePlan",
+        "MENU_ID": "1530009",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/plan.RulePrePlan"
+    },
+    {
+        "MENU_NAME": "预演方案审核",
+        "PARENT_MENU_ID": "1530000",
+        "name": "预演方案审核",
+        "MOD_NAME": "?service=page/audit.QueryCommonAdtRecList&listener=initCommonAdtRecList&busiTypeCode=400000&auditBizCode=PREVPLAN",
+        "MENU_ID": "1530010",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/audit.QueryCommonAdtRecList&listener=initCommonAdtRecList&busiTypeCode=400000&auditBizCode=PREVPLAN"
+    },
+    {
+        "MENU_NAME": "预演结果比对",
+        "PARENT_MENU_ID": "1530000",
+        "name": "预演结果比对",
+        "MOD_NAME": "?service=page/plan.PrePlanRatio",
+        "MENU_ID": "1530011",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/plan.PrePlanRatio"
+    },
+    {
+        "MENU_NAME": "报表编辑",
+        "PARENT_MENU_ID": "1540000",
+        "name": "报表编辑",
+        "MOD_NAME": "?service=page/report.ReportList",
+        "MENU_ID": "1540018",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/report.ReportList"
+    },
+    {
+        "MENU_NAME": "报表文件管理",
+        "PARENT_MENU_ID": "1540000",
+        "name": "报表文件管理",
+        "MOD_NAME": "?service=page/drpt.ExpDownload&listener=qryExpLogList",
+        "MENU_ID": "1540040",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/drpt.ExpDownload&listener=qryExpLogList"
+    },
+    {
+        "MENU_NAME": "酬金结果模板管理",
+        "PARENT_MENU_ID": "1540000",
+        "name": "酬金结果模板管理",
+        "MOD_NAME": "?service=page/template.CalTemplate&listener=initPage&busiTypeCode=400000",
+        "MENU_ID": "1540017",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/template.CalTemplate&listener=initPage&busiTypeCode=400000"
+    },
+    {
+        "MENU_NAME": "酬金科目",
+        "PARENT_MENU_ID": "1540000",
+        "name": "酬金科目",
+        "MOD_NAME": "?service=page/subject.RewardSubject&listener=initPage&busiTypeCode=400000",
+        "MENU_ID": "1540015",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/subject.RewardSubject&listener=initPage&busiTypeCode=400000"
+    },
+    {
+        "MENU_NAME": "计算轨迹查询-预演",
+        "PARENT_MENU_ID": "1540000",
+        "name": "计算轨迹查询-预演",
+        "MOD_NAME": "?service=page/tracktree.TrackTree&listener=init&tm=M&type=T",
+        "MENU_ID": "1530014",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/tracktree.TrackTree&listener=init&tm=M&type=T"
+    },
+    {
+        "MENU_NAME": "计算轨迹查询-正式",
+        "PARENT_MENU_ID": "1540000",
+        "name": "计算轨迹查询-正式",
+        "MOD_NAME": "?service=page/tracktree.TrackTree&listener=init&tm=M&type=Z",
+        "MENU_ID": "1530013",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/tracktree.TrackTree&listener=init&tm=M&type=Z"
+    },
+    {
+        "MENU_NAME": "科目映射",
+        "PARENT_MENU_ID": "1540000",
+        "name": "科目映射",
+        "MOD_NAME": "?service=page/subject.RelBsp&listener=initPage&busiTypeCode=400000",
+        "MENU_ID": "1540016",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/subject.RelBsp&listener=initPage&busiTypeCode=400000"
+    },
+    {
+        "MENU_NAME": "支付结果",
+        "PARENT_MENU_ID": "1540000",
+        "name": "支付结果",
+        "MOD_NAME": "?service=page/payresult.PayInfo",
+        "MENU_ID": "1540028",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/payresult.PayInfo"
+    },
+    {
+        "MENU_NAME": "酬金调整提交",
+        "PARENT_MENU_ID": "1550000",
+        "name": "酬金调整提交",
+        "MOD_NAME": "?service=page/adjust.SubmitExtAdjustSH&listener=init&busiTypeCode=400000",
+        "MENU_ID": "1550023",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/adjust.SubmitExtAdjustSH&listener=init&busiTypeCode=400000"
+    },
+    {
+        "MENU_NAME": "酬金延迟报账查询",
+        "PARENT_MENU_ID": "1550000",
+        "name": "酬金延迟报账查询",
+        "MOD_NAME": "?service=page/render.QueryRenderInfo&listener=init&busiTypeCode=400000&bizDepart=BUSI",
+        "MENU_ID": "1550035",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/render.QueryRenderInfo&listener=init&busiTypeCode=400000&bizDepart=BUSI"
+    },
+    {
+        "MENU_NAME": "酬金延迟报账确认提交",
+        "PARENT_MENU_ID": "1550000",
+        "name": "酬金延迟报账确认提交",
+        "MOD_NAME": "?service=page/render.QueryUnconfirmedRender&listener=init&busiTypeCode=400000&bizDepart=BUSI",
+        "MENU_ID": "1550034",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/render.QueryUnconfirmedRender&listener=init&busiTypeCode=400000&bizDepart=BUSI"
+    },
+    {
+        "MENU_NAME": "当前账期调整审核",
+        "PARENT_MENU_ID": "1550000",
+        "name": "当前账期调整审核",
+        "MOD_NAME": "?service=page/audit.QueryCommonAdtRecList&listener=initCommonAdtRecList&busiTypeCode=400000&auditBizCode=RWDADJUST",
+        "MENU_ID": "1550020",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/audit.QueryCommonAdtRecList&listener=initCommonAdtRecList&busiTypeCode=400000&auditBizCode=RWDADJUST"
+    },
+    {
+        "MENU_NAME": "历史账期调整回退",
+        "PARENT_MENU_ID": "1550000",
+        "name": "历史账期调整回退",
+        "MOD_NAME": "?service=page/adjust.AdjustAdtBySelfSH&listener=initCommonAdtRecList&busiTypeCode=400000&auditBizCode=HISRWDADJUST",
+        "MENU_ID": "1550024",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/adjust.AdjustAdtBySelfSH&listener=initCommonAdtRecList&busiTypeCode=400000&auditBizCode=HISRWDADJUST"
+    },
+    {
+        "MENU_NAME": "历史账期调整审核",
+        "PARENT_MENU_ID": "1550000",
+        "name": "历史账期调整审核",
+        "MOD_NAME": "?service=page/audit.QueryCommonAdtRecList&listener=initCommonAdtRecList&busiTypeCode=400000&auditBizCode=HISRWDADJUST",
+        "MENU_ID": "1550022",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/audit.QueryCommonAdtRecList&listener=initCommonAdtRecList&busiTypeCode=400000&auditBizCode=HISRWDADJUST"
+    },
+    {
+        "MENU_NAME": "历史账期临时调整",
+        "PARENT_MENU_ID": "1550000",
+        "name": "历史账期临时调整",
+        "MOD_NAME": "?service=page/adjust.QryExtActiveCalHis&listener=init&busiTypeCode=400000",
+        "MENU_ID": "1550031",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/adjust.QryExtActiveCalHis&listener=init&busiTypeCode=400000"
+    },
+    {
+        "MENU_NAME": "历史账期普通调整",
+        "PARENT_MENU_ID": "1550000",
+        "name": "历史账期普通调整",
+        "MOD_NAME": "?service=page/adjust.QryExtNormalCalHis&listener=init&busiTypeCode=400000",
+        "MENU_ID": "1550030",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/adjust.QryExtNormalCalHis&listener=init&busiTypeCode=400000"
+    },
+    {
+        "MENU_NAME": "报表查询",
+        "PARENT_MENU_ID": "1570000",
+        "name": "报表查询",
+        "MOD_NAME": "?service=page/filemanage.ReportTreeList",
+        "MENU_ID": "1571000",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/filemanage.ReportTreeList"
+    },
+    {
+        "MENU_NAME": "策划发布",
+        "PARENT_MENU_ID": "1580000",
+        "name": "策划发布",
+        "MOD_NAME": "?service=page/prepdata.PrepOfferDataDeploy",
+        "MENU_ID": "1580002",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/prepdata.PrepOfferDataDeploy"
+    },
+    {
+        "MENU_NAME": "策划管理",
+        "PARENT_MENU_ID": "1580000",
+        "name": "策划管理",
+        "MOD_NAME": "?service=page/prepdata.PrepOfferData",
+        "MENU_ID": "1580001",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/prepdata.PrepOfferData"
+    },
+    {
+        "MENU_NAME": "方案参数管理",
+        "PARENT_MENU_ID": "1580000",
+        "name": "方案参数管理",
+        "MOD_NAME": "?service=page/rule.RuleParam",
+        "MENU_ID": "1580003",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/rule.RuleParam"
+    },
+    {
+        "MENU_NAME": "规则参数发布",
+        "PARENT_MENU_ID": "1580000",
+        "name": "规则参数发布",
+        "MOD_NAME": "?service=page/rule.RuleParamDeploy",
+        "MENU_ID": "1580004",
+        "MENU_IMG": "temp/flow.png",
+        "CLASS_LEVEL": "2",
+        "url": "?service=page/rule.RuleParamDeploy"
+    }
+]
